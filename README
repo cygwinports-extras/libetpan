@@ -1,0 +1,212 @@
+libetpan
+------------------------------------------
+The purpose of this mail library is to provide a portable, efficient 
+framework for different kinds of mail access. When using the drivers 
+interface, the interface is the same for all kinds of mail access, 
+remote and local mailboxes.
+
+Runtime requirements:
+  cygwin-1.5.25-15
+  libdb4.6-4.6.21.1-1
+  libiconv2-1.11-1
+  libsasl2-2.1.19-3
+  openssl-0.9.8h-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20080523-1
+  cygport-0.3.11-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gcc-g++-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  sed-4.1.5-2
+
+Canonical website:
+  http://libetpan.sourceforge.net/libetpan/index.html
+
+Canonical download:
+  http://downloads.sourceforge.net/libetpan/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libetpan-0.54-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libetpan-0.54-X.cygport all
+
+This will create:
+  /usr/src/libetpan-0.54-X-src.tar.bz2
+  /usr/src/libetpan-0.54-X.tar.bz2
+  /usr/src/libetpan-devel-0.54-X.tar.bz2
+  /usr/src/libetpan13-0.54-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libetpan13)
+  /usr/bin/cygetpan-13.dll
+  /usr/share/doc/libetpan-0.54/COPYRIGHT
+  /usr/share/doc/libetpan-0.54/ChangeLog
+  /usr/share/doc/libetpan-0.54/INSTALL
+  /usr/share/doc/libetpan-0.54/NEWS
+
+(libetpan-devel)
+  /usr/bin/libetpan-config
+  /usr/include/libetpan.h
+  /usr/include/libetpan/acl.h
+  /usr/include/libetpan/acl_types.h
+  /usr/include/libetpan/annotatemore.h
+  /usr/include/libetpan/annotatemore_types.h
+  /usr/include/libetpan/carray.h
+  /usr/include/libetpan/charconv.h
+  /usr/include/libetpan/chash.h
+  /usr/include/libetpan/clist.h
+  /usr/include/libetpan/data_message_driver.h
+  /usr/include/libetpan/dbdriver.h
+  /usr/include/libetpan/dbdriver_message.h
+  /usr/include/libetpan/dbdriver_types.h
+  /usr/include/libetpan/dbstorage.h
+  /usr/include/libetpan/feeddriver.h
+  /usr/include/libetpan/feeddriver_message.h
+  /usr/include/libetpan/feeddriver_types.h
+  /usr/include/libetpan/feedstorage.h
+  /usr/include/libetpan/generic_cache_types.h
+  /usr/include/libetpan/hotmailstorage.h
+  /usr/include/libetpan/idle.h
+  /usr/include/libetpan/imapdriver.h
+  /usr/include/libetpan/imapdriver_cached.h
+  /usr/include/libetpan/imapdriver_cached_message.h
+  /usr/include/libetpan/imapdriver_message.h
+  /usr/include/libetpan/imapdriver_tools.h
+  /usr/include/libetpan/imapdriver_tools_private.h
+  /usr/include/libetpan/imapdriver_types.h
+  /usr/include/libetpan/imapstorage.h
+  /usr/include/libetpan/libetpan-config.h
+  /usr/include/libetpan/libetpan.h
+  /usr/include/libetpan/libetpan_version.h
+  /usr/include/libetpan/mail.h
+  /usr/include/libetpan/maildir.h
+  /usr/include/libetpan/maildir_types.h
+  /usr/include/libetpan/maildirdriver.h
+  /usr/include/libetpan/maildirdriver_cached.h
+  /usr/include/libetpan/maildirdriver_cached_message.h
+  /usr/include/libetpan/maildirdriver_message.h
+  /usr/include/libetpan/maildirdriver_types.h
+  /usr/include/libetpan/maildirstorage.h
+  /usr/include/libetpan/maildriver.h
+  /usr/include/libetpan/maildriver_errors.h
+  /usr/include/libetpan/maildriver_types.h
+  /usr/include/libetpan/maildriver_types_helper.h
+  /usr/include/libetpan/mailengine.h
+  /usr/include/libetpan/mailfolder.h
+  /usr/include/libetpan/mailimap.h
+  /usr/include/libetpan/mailimap_extension.h
+  /usr/include/libetpan/mailimap_extension_types.h
+  /usr/include/libetpan/mailimap_helper.h
+  /usr/include/libetpan/mailimap_socket.h
+  /usr/include/libetpan/mailimap_ssl.h
+  /usr/include/libetpan/mailimap_types.h
+  /usr/include/libetpan/mailimap_types_helper.h
+  /usr/include/libetpan/mailimf.h
+  /usr/include/libetpan/mailimf_types.h
+  /usr/include/libetpan/mailimf_types_helper.h
+  /usr/include/libetpan/mailimf_write_file.h
+  /usr/include/libetpan/mailimf_write_generic.h
+  /usr/include/libetpan/mailimf_write_mem.h
+  /usr/include/libetpan/maillock.h
+  /usr/include/libetpan/mailmbox.h
+  /usr/include/libetpan/mailmbox_types.h
+  /usr/include/libetpan/mailmessage.h
+  /usr/include/libetpan/mailmessage_types.h
+  /usr/include/libetpan/mailmh.h
+  /usr/include/libetpan/mailmime.h
+  /usr/include/libetpan/mailmime_content.h
+  /usr/include/libetpan/mailmime_decode.h
+  /usr/include/libetpan/mailmime_disposition.h
+  /usr/include/libetpan/mailmime_types.h
+  /usr/include/libetpan/mailmime_types_helper.h
+  /usr/include/libetpan/mailmime_write_file.h
+  /usr/include/libetpan/mailmime_write_generic.h
+  /usr/include/libetpan/mailmime_write_mem.h
+  /usr/include/libetpan/mailpop3.h
+  /usr/include/libetpan/mailpop3_helper.h
+  /usr/include/libetpan/mailpop3_socket.h
+  /usr/include/libetpan/mailpop3_ssl.h
+  /usr/include/libetpan/mailpop3_types.h
+  /usr/include/libetpan/mailprivacy.h
+  /usr/include/libetpan/mailprivacy_gnupg.h
+  /usr/include/libetpan/mailprivacy_smime.h
+  /usr/include/libetpan/mailprivacy_tools.h
+  /usr/include/libetpan/mailprivacy_types.h
+  /usr/include/libetpan/mailsem.h
+  /usr/include/libetpan/mailsmtp.h
+  /usr/include/libetpan/mailsmtp_helper.h
+  /usr/include/libetpan/mailsmtp_socket.h
+  /usr/include/libetpan/mailsmtp_ssl.h
+  /usr/include/libetpan/mailsmtp_types.h
+  /usr/include/libetpan/mailstorage.h
+  /usr/include/libetpan/mailstorage_types.h
+  /usr/include/libetpan/mailstream.h
+  /usr/include/libetpan/mailstream_helper.h
+  /usr/include/libetpan/mailstream_low.h
+  /usr/include/libetpan/mailstream_socket.h
+  /usr/include/libetpan/mailstream_ssl.h
+  /usr/include/libetpan/mailstream_types.h
+  /usr/include/libetpan/mailthread.h
+  /usr/include/libetpan/mailthread_types.h
+  /usr/include/libetpan/mboxdriver.h
+  /usr/include/libetpan/mboxdriver_cached.h
+  /usr/include/libetpan/mboxdriver_cached_message.h
+  /usr/include/libetpan/mboxdriver_message.h
+  /usr/include/libetpan/mboxdriver_types.h
+  /usr/include/libetpan/mboxstorage.h
+  /usr/include/libetpan/mhdriver.h
+  /usr/include/libetpan/mhdriver_cached.h
+  /usr/include/libetpan/mhdriver_cached_message.h
+  /usr/include/libetpan/mhdriver_message.h
+  /usr/include/libetpan/mhdriver_types.h
+  /usr/include/libetpan/mhstorage.h
+  /usr/include/libetpan/mime_message_driver.h
+  /usr/include/libetpan/mmapstring.h
+  /usr/include/libetpan/newsfeed.h
+  /usr/include/libetpan/newsfeed_item.h
+  /usr/include/libetpan/newsfeed_item_enclosure.h
+  /usr/include/libetpan/newsfeed_types.h
+  /usr/include/libetpan/newsnntp.h
+  /usr/include/libetpan/newsnntp_socket.h
+  /usr/include/libetpan/newsnntp_ssl.h
+  /usr/include/libetpan/newsnntp_types.h
+  /usr/include/libetpan/nntpdriver.h
+  /usr/include/libetpan/nntpdriver_cached.h
+  /usr/include/libetpan/nntpdriver_cached_message.h
+  /usr/include/libetpan/nntpdriver_message.h
+  /usr/include/libetpan/nntpdriver_types.h
+  /usr/include/libetpan/nntpstorage.h
+  /usr/include/libetpan/pop3driver.h
+  /usr/include/libetpan/pop3driver_cached.h
+  /usr/include/libetpan/pop3driver_cached_message.h
+  /usr/include/libetpan/pop3driver_message.h
+  /usr/include/libetpan/pop3driver_types.h
+  /usr/include/libetpan/pop3storage.h
+  /usr/include/libetpan/uidplus.h
+  /usr/include/libetpan/uidplus_types.h
+  /usr/lib/libetpan.dll.a
+  /usr/lib/libetpan.la
+
+------------------
+
+Port Notes:
+
+----- version 0.54-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

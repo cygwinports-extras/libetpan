@@ -1,0 +1,8 @@
+category: Mail
+requires: cygwin libdb4.6 libiconv2 libsasl2 openssl
+external-source: libetpan
+sdesc: "Mail access library (runtime)"
+ldesc: "The purpose of this mail library is to provide a portable, 
+efficient framework for different kinds of mail access. When using the 
+drivers interface, the interface is the same for all kinds of mail 
+access, remote and local mailboxes."

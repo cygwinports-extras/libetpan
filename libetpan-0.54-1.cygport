@@ -1,0 +1,12 @@
+DESCRIPTION="Mail access library"
+HOMEPAGE="http://libetpan.sourceforge.net/libetpan/index.html"
+SRC_URI="mirror://sourceforge/libetpan/${P}.tar.gz"
+
+abi=13
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel"
+PKG_HINTS="setup dll devel"
+PKG_CONTENTS[0]=  # empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]="usr/bin/${PN}-config usr/include/ usr/lib"
+
+CYGCONF_ARGS="--disable-ipv6 --disable-static"
