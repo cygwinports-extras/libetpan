@@ -1,4 +1,4 @@
-category: _obsolete
+category: Mail
 sdesc: "Mail access library (sources)"
 ldesc: "The purpose of this mail library is to provide a portable, 
 efficient framework for different kinds of mail access. When using the 

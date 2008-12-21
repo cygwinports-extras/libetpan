@@ -7,21 +7,21 @@ remote and local mailboxes.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libdb4.6-4.6.21.1-1
-  libiconv2-1.11-1
+  libdb4.7-4.7.25.1-1
+  libiconv2-1.12-1
   libsasl2-2.1.19-3
-  openssl-0.9.8h-1
+  openssl-0.9.8i-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080523-1
-  cygport-0.3.11-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
   gcc-g++-3.4.4-3
-  libtool-2.2.2-2
+  libtool-2.2.6a-1
   make-3.81-1
   sed-4.1.5-2
 
@@ -34,17 +34,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libetpan-0.54-X-src.tar.bz2
+  unpack libetpan-0.57-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libetpan-0.54-X.cygport all
+  cygport ./libetpan-0.57-X.cygport all
 
 This will create:
-  /usr/src/libetpan-0.54-X-src.tar.bz2
-  /usr/src/libetpan-0.54-X.tar.bz2
-  /usr/src/libetpan-devel-0.54-X.tar.bz2
-  /usr/src/libetpan13-0.54-X.tar.bz2
+  /usr/src/libetpan-0.57-X-src.tar.bz2
+  /usr/src/libetpan-devel-0.57-X.tar.bz2
+  /usr/src/libetpan13-0.57-X.tar.bz2
 
 -------------------------------------------
 
@@ -52,10 +51,10 @@ Files included in the binary packages:
 
 (libetpan13)
   /usr/bin/cygetpan-13.dll
-  /usr/share/doc/libetpan-0.54/COPYRIGHT
-  /usr/share/doc/libetpan-0.54/ChangeLog
-  /usr/share/doc/libetpan-0.54/INSTALL
-  /usr/share/doc/libetpan-0.54/NEWS
+  /usr/share/doc/libetpan-0.57/COPYRIGHT
+  /usr/share/doc/libetpan-0.57/ChangeLog
+  /usr/share/doc/libetpan-0.57/INSTALL
+  /usr/share/doc/libetpan-0.57/NEWS
 
 (libetpan-devel)
   /usr/bin/libetpan-config
@@ -197,12 +196,16 @@ Files included in the binary packages:
   /usr/include/libetpan/pop3storage.h
   /usr/include/libetpan/uidplus.h
   /usr/include/libetpan/uidplus_types.h
+  /usr/lib/libetpan.a
   /usr/lib/libetpan.dll.a
   /usr/lib/libetpan.la
 
 ------------------
 
 Port Notes:
+
+----- version 0.57-1 -----
+Version bump.
 
 ----- version 0.54-1 -----
 Initial release for Cygwin.

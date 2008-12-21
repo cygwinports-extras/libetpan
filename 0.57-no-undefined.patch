@@ -1,0 +1,11 @@
+--- origsrc/libetpan-0.57/src/Makefile.am	2007-10-29 19:40:39.000000000 -0500
++++ src/libetpan-0.57/src/Makefile.am	2008-12-21 00:34:04.600551400 -0600
+@@ -51,7 +51,7 @@
+ 
+ libetpan_res =
+ libetpan_res_ldflag =
+-no_undefined =
++no_undefined = -no-undefined
+ 
+ libetpan_deps =
+ endif

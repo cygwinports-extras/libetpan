@@ -1,0 +1,13 @@
+--- origsrc/libetpan-0.57/rules.mk	2008-04-19 04:25:40.000000000 -0500
++++ src/libetpan-0.57/rules.mk	2008-12-21 00:34:04.584926400 -0600
+@@ -135,8 +135,8 @@
+ 	           echo "$(LN_S) -f ../../$(subdir)/$${hdr} ."; \
+ 	           $(LN_S) -f ../../$(subdir)/$${hdr} .; \
+              else \
+-	           echo "$(LN_S) -f ../../$(subdir)/$(srcdir)/$${hdr} ."; \
+-	           $(LN_S) -f ../../$(subdir)/$(srcdir)/$${hdr} .; \
++	           echo "$(LN_S) -f $(srcdir)/$${hdr} ."; \
++	           $(LN_S) -f $(srcdir)/$${hdr} .; \
+              fi; \
+            fi; \
+ 	     done; \
