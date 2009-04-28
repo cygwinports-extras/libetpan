@@ -11,5 +11,3 @@ PKG_NAMES="${PN} ${PN}13 ${PN}-devel"
 PKG_HINTS="setup dll devel"
 libetpan13_CONTENTS="usr/bin/*-13.dll usr/share/doc/"
 libetpan_devel_CONTENTS="usr/bin/${PN}-config usr/include/ usr/lib"
-
-CYGCONF_ARGS="--disable-ipv6"
