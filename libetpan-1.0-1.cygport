@@ -2,12 +2,11 @@ DESCRIPTION="Mail access library"
 HOMEPAGE="http://libetpan.sourceforge.net/libetpan/index.html"
 SRC_URI="mirror://sourceforge/libetpan/${P}.tar.gz"
 PATCH_URI="
-	0.57-libtool22.patch
 	0.57-no-undefined.patch
 	0.57-vpath.patch
 "
 
-PKG_NAMES="${PN} ${PN}13 ${PN}-devel"
+PKG_NAMES="${PN} ${PN}15 ${PN}-devel"
 PKG_HINTS="setup dll devel"
-libetpan13_CONTENTS="usr/bin/*-13.dll usr/share/doc/"
+libetpan15_CONTENTS="usr/bin/*-15.dll usr/share/doc/"
 libetpan_devel_CONTENTS="usr/bin/${PN}-config usr/include/ usr/lib"
