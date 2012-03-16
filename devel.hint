@@ -1,5 +1,5 @@
 category: Mail
-requires: libetpan15 libdb4.5-devel libiconv libsasl2-devel openssl-devel
+requires: libetpan16 libdb4.8-devel libiconv libsasl2-devel openssl-devel
 external-source: libetpan
 sdesc: "Mail access library (development)"
 ldesc: "The purpose of this mail library is to provide a portable, 
