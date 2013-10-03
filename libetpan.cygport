@@ -1,0 +1,22 @@
+NAME="libetpan"
+VERSION=1.1
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Mail access library"
+DESCRIPTION="The purpose of this mail library is to provide a portable,
+efficient framework for different kinds of mail access. When using the
+drivers interface, the interface is the same for all kinds of mail access,
+remote and local mailboxes."
+HOMEPAGE="http://www.etpan.org/"
+SRC_URI="mirror://sourceforge/libetpan/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="
+	0.57-no-undefined.patch
+	0.57-vpath.patch
+"
+
+PKG_NAMES="${NAME}16 ${NAME}-devel"
+libetpan16_CONTENTS="usr/bin/*-16.dll usr/share/doc/"
+libetpan_devel_REQUIRES="libdb-devel libiconv libsasl2-devel openssl-devel"
+libetpan_devel_CONTENTS="usr/bin/${NAME}-config usr/include/ usr/lib"
+
+KEEP_LA_FILES="none"

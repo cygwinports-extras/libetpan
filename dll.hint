@@ -1,8 +1,0 @@
-category: Mail
-requires: libdb4.8 libgcc1 libiconv2 libsasl2 libopenssl100
-external-source: libetpan
-sdesc: "Mail access library (runtime)"
-ldesc: "The purpose of this mail library is to provide a portable, 
-efficient framework for different kinds of mail access. When using the 
-drivers interface, the interface is the same for all kinds of mail 
-access, remote and local mailboxes."
