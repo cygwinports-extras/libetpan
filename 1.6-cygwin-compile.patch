@@ -1,0 +1,11 @@
+--- origsrc/libetpan-1.6/src/low-level/smtp/mailsmtp.c	2014-10-31 16:41:02.000000000 -0500
++++ src/libetpan-1.6/src/low-level/smtp/mailsmtp.c	2015-02-11 10:41:54.068734400 -0600
+@@ -271,7 +271,7 @@ static int get_hostname(mailsmtp * sessi
+     if (r != 0)
+       return MAILSMTP_ERROR_HOSTNAME;
+ 
+-#if (defined __linux__ || defined WIN32)
++#if (defined __linux__ || defined WIN32 || defined __CYGWIN__)
+     r = getnameinfo(&addr, sizeof(addr), hostname, HOSTNAME_SIZE, NULL, 0, NI_NUMERICHOST);
+ #else
+     r = getnameinfo(&addr, addr.sa_len, hostname, HOSTNAME_SIZE, NULL, 0, NI_NUMERICHOST);
