@@ -1,5 +1,5 @@
 NAME="libetpan"
-VERSION=1.6
+VERSION=1.8
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Mail access library"
@@ -15,9 +15,7 @@ PATCH_URI="
 	1.6-cygwin-compile.patch
 "
 
-PKG_NAMES="${NAME}17 ${NAME}-devel"
-libetpan17_CONTENTS="usr/bin/cygetpan-17.dll usr/share/doc/"
-libetpan_devel_REQUIRES="libdb-devel libiconv libsasl2-devel openssl-devel"
+PKG_NAMES="${NAME}20 ${NAME}-devel"
+libetpan20_CONTENTS="usr/bin/cygetpan-20.dll usr/share/doc/"
+libetpan_devel_REQUIRES="libdb-devel libiconv-devel libsasl2-devel openssl-devel"
 libetpan_devel_CONTENTS="usr/bin/${NAME}-config usr/include/ usr/lib"
-
-KEEP_LA_FILES="none"
